@@ -732,6 +732,11 @@ footer{
 		position: absolute;
 	}
 
+	li.nav-item{
+		font-size:20px;
+		opacity:1;
+	}
+
 	#intro{
 		font-weight: normal;
 		line-height: 1;
