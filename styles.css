@@ -14,19 +14,17 @@ nav{
 	opacity: 0.8;
 	position:fixed;
 	width: 100%;
+	top: 0;
 }
 
 ul.nav-list{
-
 	display: flex;
 	justify-content: center;
 	list-style: none;
-	margin: 0;
 	padding-top: 1%;
 	padding-bottom: 10px;
 	color: black;
 	background-color: #50575e;
-	/*margin-bottom: 0;*/
 }
 
 li.nav-item{
@@ -36,31 +34,17 @@ li.nav-item{
 
 .a, .b, .c, .d, .e, .f, .g, .i, .j, .k, .l, .m, .n, .p, .q{
 	background-color:#3c434a;
-	/*background-color: #50575e;*/
-	/*margin: 5%;*/
-	/*padding: 10px;
-	border: 1px solid white;*/
-	/*border-radius: 10px;*/
 }
 
 .a{
-	/*margin-top:-40%;*/
 	grid-area: a;  
-	margin: 0;
+	margin: 0px;
 	background-color: #50575e;
-	/*background-image: url("images/background.jpg");*/
 	display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
 	color: white;
-	/*margin-bottom:10%;*/
-	/*font-size: 60px; */
-	/*position: fixed; */
-	/*width: 100%;
-	height: auto;*/
-	/*padding: 10px;*/
-	/*padding-bottom: 10%;*/
 }
 
 .a img {
@@ -95,7 +79,11 @@ li.nav-item{
 	margin: 5%;
 	padding:5%;
 	transition:transform .2s;
+	
+	
 }
+
+h3, h4, ul{text-align: left;}
 
 .d:hover{
 	transform: scale(1.1);
@@ -242,6 +230,7 @@ li.nav-item{
 .q{
     margin-top: 10%;
     grid-area:q;
+	text-align: center;
 }
 
 .r {
@@ -252,6 +241,7 @@ li.nav-item{
 	grid-area:x;
 	text-align:center;
 	width: 100%;
+	margin-top: 0px;
 }
 
 #intro{
@@ -270,6 +260,20 @@ li.nav-item{
 	font-weight: lighter;
 	text-align: center;
 	color: silver;
+	z-index: 0;
+}
+#position:hover{
+	color: #fff;
+	text-shadow:
+	  0 0 7px #fff,
+	  0 0 10px #fff,
+	  0 0 21px #fff,
+	  0 0 42px #DE73FF,
+	  0 0 82px #DE73FF,
+	  0 0 92px #DE73FF,
+	  0 0 102px #DE73FF,
+	  0 0 151px #DE73FF;
+	text-shadow: [x-offset] [y-offset] [blur-radius] [color];
 }
 
 .link{
@@ -311,12 +315,12 @@ a:link{
 }
 
 a:visited{
-	color: hotpink;
+	color: darkgray;
 	text-decoration: none;
 }
 
 a:hover{
-	color: springgreen;
+	color: #DE73FF;
 	text-decoration: none;
 }
 
@@ -325,9 +329,6 @@ a:active{
 	text-decoration: none;
 }
 
-/*img{
-	transition: transform .2s;
-}*/
 img:hover{
 	opacity:0.7;
 }
@@ -391,7 +392,7 @@ footer{
 		margin-top: -50%;
 		text-align:left;
 		font-size:15px;
-		position: absolute;
+		position: relative;
 		left: 50%;
 		top: 50%;
 		line-height: 0.8;
@@ -460,8 +461,8 @@ footer{
 		text-align:left;
 		font-size:15px;
 		position: absolute;
-		left: 50%;
-		top: 50%;
+		left: 70%;
+		top: 40%;
 		line-height: 0.8;
 		transform: translate(-50%, -50%);
 	}
@@ -480,7 +481,6 @@ footer{
 
 }
 
-/* in between 30-35*/
 @media (min-width:30em) and (max-width:34em){
 	.wrapper{
 	text-align: center;
@@ -528,7 +528,7 @@ footer{
 		text-align:left;
 		font-size:20px;
 		position: absolute;
-		left: 50%;
+		left: 70%;
 		top: 50%;
 		line-height: 0.8;
 		transform: translate(-50%, -50%);
@@ -546,7 +546,6 @@ footer{
 
 }
 
-/* in between 40-50 */
 @media (min-width:34em) and (max-width:50em){
 	.wrapper{
 	text-align: center;
@@ -594,7 +593,7 @@ footer{
 		text-align:left;
 		font-size:25px;
 		position: absolute;
-		left: 50%;
+		left: 65%;
 		top: 50%;
 		line-height: 0.8;
 		transform: translate(-50%, -50%);
@@ -624,7 +623,7 @@ footer{
 	    grid-auto-rows: minmax(100px, auto);
 
 	    grid-template-areas:
-	    	  'x x x' /*nav*/
+	    	  /* 'x x x' nav */
 	          'a a a' /*home*/
 	          'a a a'
 	          'a a a'
@@ -659,8 +658,8 @@ footer{
 
 		text-align: left;
 		font-size:180%;
-		left: 50%;
-		top: 50%;
+		left: 62%;
+		top: 30%;
 		transform: translate(-50%, -50%);
 		position: absolute;
 	}
@@ -693,7 +692,6 @@ footer{
 	    grid-auto-rows: minmax(100px, auto);
 
 	    grid-template-areas:
-	    	  'x x x' /*nav*/
 	          'a a a' /*home*/
 	          'a a a'
 	          'a a a'
@@ -728,14 +726,10 @@ footer{
 	.textbox {
 		font-size: 240%;
 		text-align:left;
-		left: 50%;
-		top: 50%;
+		left: 55%;
+		top: 35%;
 		transform: translate(-50%, -50%);
 		position: absolute;
-	}
-
-	.nav-list{
-		font-size: 25px;
 	}
 
 	#intro{
@@ -745,4 +739,12 @@ footer{
 	
 	
 
+}
+
+.contact-info{
+	text-align: center;
+}
+
+.subtitle{
+	padding-top: 80px;
 }
